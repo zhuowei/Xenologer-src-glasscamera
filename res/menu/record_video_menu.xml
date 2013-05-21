@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:glass="http://schemas.android.com/apk/res/com.google.glass.camera">
+    <item glass:id="@id/extend_video" glass:name="@string/extend_video" glass:image="@drawable/ic_video_medium" />
+    <item glass:id="@id/stop_recording" glass:name="@string/stop_recording" glass:image="@drawable/ic_video_off_medium" />
+</menu>
