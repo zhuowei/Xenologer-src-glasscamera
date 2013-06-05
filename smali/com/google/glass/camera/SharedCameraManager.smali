@@ -847,7 +847,9 @@
     .line 755
     .local v0, acquireCameraTimeMillis:J
     :try_start_0
-    invoke-static {}, Landroid/hardware/Camera;->open()Landroid/hardware/Camera;
+    const/4 v5, 0x0
+
+    invoke-static {v5}, Landroid/hardware/Camera;->open(I)Landroid/hardware/Camera; 
 
     move-result-object v5
 

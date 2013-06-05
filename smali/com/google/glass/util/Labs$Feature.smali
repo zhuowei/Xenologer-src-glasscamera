@@ -155,7 +155,7 @@
 
     const-string v1, "GCAM"
 
-    invoke-direct {v0, v1, v3, v4}, Lcom/google/glass/util/Labs$Feature;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v0, v1, v3, v3}, Lcom/google/glass/util/Labs$Feature;-><init>(Ljava/lang/String;IZ)V
 
     sput-object v0, Lcom/google/glass/util/Labs$Feature;->GCAM:Lcom/google/glass/util/Labs$Feature;
 
