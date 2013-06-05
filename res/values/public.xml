@@ -11,7 +11,7 @@
     <public type="drawable" name="expander_ic_minimized" id="0x7f020021" />
     <public type="drawable" name="gf_expand" id="0x7f020022" />
     <public type="drawable" name="gf_icon" id="0x7f020023" />
-    <public type="drawable" name="slider_indeterminate" id="0x7f020050" />
+    <public type="drawable" name="slider_indeterminate" id="0x7f02004d" />
     <public type="drawable" name="bar_candy0001" id="0x7f020000" />
     <public type="drawable" name="bar_candy0002" id="0x7f020001" />
     <public type="drawable" name="bar_candy0003" id="0x7f020002" />
@@ -52,45 +52,42 @@
     <public type="drawable" name="ic_bluetooth_off_big" id="0x7f020028" />
     <public type="drawable" name="ic_bluetooth_on_big" id="0x7f020029" />
     <public type="drawable" name="ic_bug_large" id="0x7f02002a" />
-    <public type="drawable" name="ic_circle_medium" id="0x7f02002b" />
-    <public type="drawable" name="ic_cloud_happy_big" id="0x7f02002c" />
-    <public type="drawable" name="ic_cloud_sad_big" id="0x7f02002d" />
-    <public type="drawable" name="ic_delete_medium" id="0x7f02002e" />
-    <public type="drawable" name="ic_done_large" id="0x7f02002f" />
-    <public type="drawable" name="ic_done_medium" id="0x7f020030" />
-    <public type="drawable" name="ic_exclamation_big" id="0x7f020031" />
-    <public type="drawable" name="ic_fail_medium" id="0x7f020032" />
-    <public type="drawable" name="ic_glass_big" id="0x7f020033" />
-    <public type="drawable" name="ic_hangout_medium" id="0x7f020034" />
-    <public type="drawable" name="ic_help_medium" id="0x7f020035" />
-    <public type="drawable" name="ic_microphone_medium" id="0x7f020036" />
-    <public type="drawable" name="ic_microphone_off_medium" id="0x7f020037" />
-    <public type="drawable" name="ic_navigate_medium" id="0x7f020038" />
-    <public type="drawable" name="ic_phone_hang_medium" id="0x7f020039" />
-    <public type="drawable" name="ic_phone_in_medium" id="0x7f02003a" />
-    <public type="drawable" name="ic_phone_on" id="0x7f02003b" />
-    <public type="drawable" name="ic_phone_out_medium" id="0x7f02003c" />
-    <public type="drawable" name="ic_pin_medium" id="0x7f02003d" />
-    <public type="drawable" name="ic_power_medium" id="0x7f02003e" />
-    <public type="drawable" name="ic_qr_code_big" id="0x7f02003f" />
-    <public type="drawable" name="ic_read_aloud_medium" id="0x7f020040" />
-    <public type="drawable" name="ic_reply_all_medium" id="0x7f020041" />
-    <public type="drawable" name="ic_reply_medium" id="0x7f020042" />
-    <public type="drawable" name="ic_search_medium" id="0x7f020043" />
-    <public type="drawable" name="ic_share_medium" id="0x7f020044" />
-    <public type="drawable" name="ic_sync_medium" id="0x7f020045" />
-    <public type="drawable" name="ic_unpin_medium" id="0x7f020046" />
-    <public type="drawable" name="ic_video_medium" id="0x7f020047" />
-    <public type="drawable" name="ic_video_off_medium" id="0x7f020048" />
-    <public type="drawable" name="ic_warning_large" id="0x7f020049" />
-    <public type="drawable" name="ic_warning_medium" id="0x7f02004a" />
-    <public type="drawable" name="overlay_large" id="0x7f02004b" />
-    <public type="drawable" name="overlay_medium" id="0x7f02004c" />
-    <public type="drawable" name="overlay_small" id="0x7f02004d" />
-    <public type="drawable" name="qr_code_footer" id="0x7f02004e" />
-    <public type="drawable" name="qr_code_scan_frame" id="0x7f02004f" />
+    <public type="drawable" name="ic_cloud_sad_big" id="0x7f02002b" />
+    <public type="drawable" name="ic_delete_medium" id="0x7f02002c" />
+    <public type="drawable" name="ic_done_large" id="0x7f02002d" />
+    <public type="drawable" name="ic_done_medium" id="0x7f02002e" />
+    <public type="drawable" name="ic_exclamation_big" id="0x7f02002f" />
+    <public type="drawable" name="ic_fail_medium" id="0x7f020030" />
+    <public type="drawable" name="ic_glass_big" id="0x7f020031" />
+    <public type="drawable" name="ic_hangout_medium" id="0x7f020032" />
+    <public type="drawable" name="ic_help_medium" id="0x7f020033" />
+    <public type="drawable" name="ic_microphone_medium" id="0x7f020034" />
+    <public type="drawable" name="ic_microphone_off_medium" id="0x7f020035" />
+    <public type="drawable" name="ic_navigate_medium" id="0x7f020036" />
+    <public type="drawable" name="ic_phone_hang_medium" id="0x7f020037" />
+    <public type="drawable" name="ic_phone_in_medium" id="0x7f020038" />
+    <public type="drawable" name="ic_phone_on" id="0x7f020039" />
+    <public type="drawable" name="ic_phone_out_medium" id="0x7f02003a" />
+    <public type="drawable" name="ic_pin_medium" id="0x7f02003b" />
+    <public type="drawable" name="ic_power_medium" id="0x7f02003c" />
+    <public type="drawable" name="ic_read_aloud_medium" id="0x7f02003d" />
+    <public type="drawable" name="ic_reply_all_medium" id="0x7f02003e" />
+    <public type="drawable" name="ic_reply_medium" id="0x7f02003f" />
+    <public type="drawable" name="ic_search_medium" id="0x7f020040" />
+    <public type="drawable" name="ic_share_medium" id="0x7f020041" />
+    <public type="drawable" name="ic_sync_medium" id="0x7f020042" />
+    <public type="drawable" name="ic_unpin_medium" id="0x7f020043" />
+    <public type="drawable" name="ic_video_medium" id="0x7f020044" />
+    <public type="drawable" name="ic_video_off_medium" id="0x7f020045" />
+    <public type="drawable" name="ic_warning_large" id="0x7f020046" />
+    <public type="drawable" name="ic_warning_medium" id="0x7f020047" />
+    <public type="drawable" name="overlay_large" id="0x7f020048" />
+    <public type="drawable" name="overlay_medium" id="0x7f020049" />
+    <public type="drawable" name="overlay_small" id="0x7f02004a" />
+    <public type="drawable" name="qr_code_footer" id="0x7f02004b" />
+    <public type="drawable" name="qr_code_scan_frame" id="0x7f02004c" />
     <public type="layout" name="bluetooth_settings_item" id="0x7f030000" />
-    <public type="layout" name="entity_view" id="0x7f030001" />
+    <public type="layout" name="entity_scroller" id="0x7f030001" />
     <public type="layout" name="feedback" id="0x7f030002" />
     <public type="layout" name="gf_expandable_row" id="0x7f030003" />
     <public type="layout" name="gf_feedback_activity" id="0x7f030004" />
@@ -112,16 +109,15 @@
     <public type="layout" name="mosaic_cell_medium_remaining" id="0x7f030014" />
     <public type="layout" name="mosaic_cell_small" id="0x7f030015" />
     <public type="layout" name="mosaic_cell_small_remaining" id="0x7f030016" />
-    <public type="layout" name="option_menu" id="0x7f030017" />
-    <public type="layout" name="option_menu_dialog" id="0x7f030018" />
-    <public type="layout" name="option_menu_item" id="0x7f030019" />
-    <public type="layout" name="qr_scan" id="0x7f03001a" />
-    <public type="layout" name="record_video_activity" id="0x7f03001b" />
-    <public type="layout" name="share_activity" id="0x7f03001c" />
-    <public type="layout" name="share_target" id="0x7f03001d" />
-    <public type="layout" name="slider" id="0x7f03001e" />
-    <public type="layout" name="take_picture_activity" id="0x7f03001f" />
-    <public type="layout" name="vertical_divider" id="0x7f030020" />
+    <public type="layout" name="option_menu_dialog" id="0x7f030017" />
+    <public type="layout" name="option_menu_item" id="0x7f030018" />
+    <public type="layout" name="qr_scan" id="0x7f030019" />
+    <public type="layout" name="record_video_activity" id="0x7f03001a" />
+    <public type="layout" name="share_activity" id="0x7f03001b" />
+    <public type="layout" name="share_target" id="0x7f03001c" />
+    <public type="layout" name="slider" id="0x7f03001d" />
+    <public type="layout" name="take_picture_activity" id="0x7f03001e" />
+    <public type="layout" name="vertical_divider" id="0x7f03001f" />
     <public type="anim" name="bundle_enter" id="0x7f040000" />
     <public type="anim" name="bundle_exit" id="0x7f040001" />
     <public type="anim" name="hide_contextual" id="0x7f040002" />
@@ -132,9 +128,9 @@
     <public type="anim" name="window_exit_down" id="0x7f040007" />
     <public type="raw" name="google_glass_mainset_en_us_alpha_sfs_delivery21_am" id="0x7f050000" />
     <public type="raw" name="google_glass_mainset_en_us_alpha_sfs_delivery21_search_20" id="0x7f050001" />
-    <public type="raw" name="google_glass_okglass_en_us_alpha_sfs_delivery08_am" id="0x7f050002" />
-    <public type="raw" name="google_glass_okglass_en_us_alpha_sfs_delivery08_search_1" id="0x7f050003" />
-    <public type="raw" name="google_glass_okglass_en_us_alpha_sfs_delivery08_search_10" id="0x7f050004" />
+    <public type="raw" name="google_glass_okglass_en_us_alpha_sfs_delivery09_am" id="0x7f050002" />
+    <public type="raw" name="google_glass_okglass_en_us_alpha_sfs_delivery09_search_1" id="0x7f050003" />
+    <public type="raw" name="google_glass_okglass_en_us_alpha_sfs_delivery09_search_10" id="0x7f050004" />
     <public type="raw" name="google_glass_takeanote_en_us_alpha_sfs_delivery01_am" id="0x7f050005" />
     <public type="raw" name="google_glass_takeanote_en_us_alpha_sfs_delivery01_search_7" id="0x7f050006" />
     <public type="raw" name="google_notification_en_us_v3_5" id="0x7f050007" />
@@ -157,6 +153,7 @@
     <public type="color" name="state_yellow" id="0x7f06000b" />
     <public type="color" name="state_red" id="0x7f06000c" />
     <public type="color" name="divider" id="0x7f06000d" />
+    <public type="color" name="people_grid_frame_focused" id="0x7f06000e" />
     <public type="dimen" name="gf_padding" id="0x7f070000" />
     <public type="dimen" name="gf_list_item_padding" id="0x7f070001" />
     <public type="dimen" name="gf_twice_padding" id="0x7f070002" />
@@ -308,41 +305,45 @@
     <public type="string" name="sharing_no_share_targets" id="0x7f08006f" />
     <public type="string" name="sharing_menu_share_confirming" id="0x7f080070" />
     <public type="string" name="sharing_menu_share_confirmed" id="0x7f080071" />
-    <public type="string" name="qr_scan_tips" id="0x7f080072" />
-    <public type="string" name="low_storage_dialog_message" id="0x7f080073" />
-    <public type="string" name="full_storage_dialog_message" id="0x7f080074" />
-    <public type="string" name="storage_dialog_sub_message" id="0x7f080075" />
-    <public type="string" name="error_bluetooth_headset_not_active" id="0x7f080076" />
-    <public type="string" name="error_no_phone_number" id="0x7f080077" />
-    <public type="string" name="error_phone_in_use" id="0x7f080078" />
-    <public type="string" name="error_tap_connection_settings" id="0x7f080079" />
-    <public type="string" name="error_edit_contacts" id="0x7f08007a" />
-    <public type="string" name="timeline_menu_share" id="0x7f08007b" />
-    <public type="string" name="timeline_menu_delete" id="0x7f08007c" />
-    <public type="string" name="timeline_menu_delete_confirming" id="0x7f08007d" />
-    <public type="string" name="timeline_menu_delete_confirmed" id="0x7f08007e" />
-    <public type="string" name="timeline_menu_reply" id="0x7f08007f" />
-    <public type="string" name="timeline_menu_reply_all" id="0x7f080080" />
-    <public type="string" name="timeline_menu_retry" id="0x7f080081" />
-    <public type="string" name="timeline_menu_read_aloud" id="0x7f080082" />
-    <public type="string" name="timeline_menu_voice_call" id="0x7f080083" />
-    <public type="string" name="timeline_menu_navigate" id="0x7f080084" />
-    <public type="string" name="timeline_menu_expand_search" id="0x7f080085" />
-    <public type="string" name="timeline_menu_hangout" id="0x7f080086" />
-    <public type="string" name="timeline_menu_pin" id="0x7f080087" />
-    <public type="string" name="timeline_menu_unpin" id="0x7f080088" />
-    <public type="string" name="timeline_menu_read_more" id="0x7f080089" />
-    <public type="string" name="timeline_menu_new_search" id="0x7f08008a" />
-    <public type="string" name="timeline_menu_error_in_a_call_no_hangout" id="0x7f08008b" />
-    <public type="string" name="timeline_menu_error_in_a_hangout_no_call" id="0x7f08008c" />
-    <public type="string" name="timeline_menu_error_in_a_hangout_no_hangout" id="0x7f08008d" />
-    <public type="string" name="timeline_menu_error_in_a_call_no_call" id="0x7f08008e" />
-    <public type="string" name="voice_message_send_retrying" id="0x7f08008f" />
-    <public type="string" name="app_name" id="0x7f080090" />
-    <public type="string" name="stop_recording" id="0x7f080091" />
-    <public type="string" name="extend_video" id="0x7f080092" />
-    <public type="string" name="extend_video_tip" id="0x7f080093" />
-    <public type="string" name="camera_error" id="0x7f080094" />
+    <public type="string" name="sharing_menu_tap_to_annotate" id="0x7f080072" />
+    <public type="string" name="qr_scan_tips" id="0x7f080073" />
+    <public type="string" name="low_storage_dialog_message" id="0x7f080074" />
+    <public type="string" name="full_storage_dialog_message" id="0x7f080075" />
+    <public type="string" name="storage_dialog_sub_message" id="0x7f080076" />
+    <public type="string" name="error_bluetooth_headset_not_active" id="0x7f080077" />
+    <public type="string" name="error_no_phone_number" id="0x7f080078" />
+    <public type="string" name="error_phone_in_use" id="0x7f080079" />
+    <public type="string" name="error_tap_connection_settings" id="0x7f08007a" />
+    <public type="string" name="error_edit_contacts" id="0x7f08007b" />
+    <public type="string" name="timeline_menu_share" id="0x7f08007c" />
+    <public type="string" name="timeline_menu_delete" id="0x7f08007d" />
+    <public type="string" name="timeline_menu_delete_confirming" id="0x7f08007e" />
+    <public type="string" name="timeline_menu_delete_confirmed" id="0x7f08007f" />
+    <public type="string" name="timeline_menu_reply" id="0x7f080080" />
+    <public type="string" name="timeline_menu_reply_all" id="0x7f080081" />
+    <public type="string" name="timeline_menu_retry" id="0x7f080082" />
+    <public type="string" name="timeline_menu_read_aloud" id="0x7f080083" />
+    <public type="string" name="timeline_menu_voice_call" id="0x7f080084" />
+    <public type="string" name="timeline_menu_navigate" id="0x7f080085" />
+    <public type="string" name="timeline_menu_expand_search" id="0x7f080086" />
+    <public type="string" name="timeline_menu_hangout" id="0x7f080087" />
+    <public type="string" name="timeline_menu_pin" id="0x7f080088" />
+    <public type="string" name="timeline_menu_unpin" id="0x7f080089" />
+    <public type="string" name="timeline_menu_read_more" id="0x7f08008a" />
+    <public type="string" name="timeline_menu_new_search" id="0x7f08008b" />
+    <public type="string" name="timeline_menu_view_website" id="0x7f08008c" />
+    <public type="string" name="timeline_menu_error_in_a_call_no_hangout" id="0x7f08008d" />
+    <public type="string" name="timeline_menu_error_in_a_hangout_no_call" id="0x7f08008e" />
+    <public type="string" name="timeline_menu_error_in_a_hangout_no_hangout" id="0x7f08008f" />
+    <public type="string" name="timeline_menu_error_in_a_call_no_call" id="0x7f080090" />
+    <public type="string" name="timeline_sms_signature_format" id="0x7f080091" />
+    <public type="string" name="timeline_sms_signature" id="0x7f080092" />
+    <public type="string" name="voice_message_send_retrying" id="0x7f080093" />
+    <public type="string" name="app_name" id="0x7f080094" />
+    <public type="string" name="stop_recording" id="0x7f080095" />
+    <public type="string" name="extend_video" id="0x7f080096" />
+    <public type="string" name="extend_video_tip" id="0x7f080097" />
+    <public type="string" name="camera_error" id="0x7f080098" />
     <public type="style" name="gf_PageHeader" id="0x7f090000" />
     <public type="style" name="gf_SectionHeader" id="0x7f090001" />
     <public type="style" name="gf_Separator" id="0x7f090002" />
@@ -407,7 +408,7 @@
     <public type="id" name="italic" id="0x7f0b0006" />
     <public type="id" name="condensed" id="0x7f0b0007" />
     <public type="id" name="tag_horizontal_scroll_item_position" id="0x7f0b0008" />
-    <public type="id" name="tag_horizontal_scroll_item_state_manager" id="0x7f0b0009" />
+    <public type="id" name="tag_card_state_manager" id="0x7f0b0009" />
     <public type="id" name="tag_horizontal_scroll_item" id="0x7f0b000a" />
     <public type="id" name="tag_horizontal_scroll_item_view_type" id="0x7f0b000b" />
     <public type="id" name="tag_horizontal_scroll_item_view_binder" id="0x7f0b000c" />
@@ -426,9 +427,9 @@
     <public type="id" name="bt_tethered_state" id="0x7f0b0019" />
     <public type="id" name="bt_companion_state" id="0x7f0b001a" />
     <public type="id" name="bt_pairing_details" id="0x7f0b001b" />
-    <public type="id" name="image" id="0x7f0b001c" />
-    <public type="id" name="label" id="0x7f0b001d" />
-    <public type="id" name="text" id="0x7f0b001e" />
+    <public type="id" name="root" id="0x7f0b001c" />
+    <public type="id" name="scroll_view" id="0x7f0b001d" />
+    <public type="id" name="slider" id="0x7f0b001e" />
     <public type="id" name="gf_expandable_row" id="0x7f0b001f" />
     <public type="id" name="gf_label" id="0x7f0b0020" />
     <public type="id" name="gf_app_header" id="0x7f0b0021" />
@@ -459,34 +460,32 @@
     <public type="id" name="gf_empty_message" id="0x7f0b003a" />
     <public type="id" name="content_view_stub" id="0x7f0b003b" />
     <public type="id" name="content_view_container" id="0x7f0b003c" />
-    <public type="id" name="ms_dialog" id="0x7f0b003d" />
-    <public type="id" name="icon" id="0x7f0b003e" />
-    <public type="id" name="slider" id="0x7f0b003f" />
-    <public type="id" name="secondary_label" id="0x7f0b0040" />
-    <public type="id" name="icons" id="0x7f0b0041" />
-    <public type="id" name="label_container" id="0x7f0b0042" />
-    <public type="id" name="label_current" id="0x7f0b0043" />
-    <public type="id" name="label_other" id="0x7f0b0044" />
-    <public type="id" name="options" id="0x7f0b0045" />
-    <public type="id" name="description" id="0x7f0b0046" />
-    <public type="id" name="viewfinder" id="0x7f0b0047" />
-    <public type="id" name="overlay" id="0x7f0b0048" />
-    <public type="id" name="recording_time_wrapper" id="0x7f0b0049" />
-    <public type="id" name="recording_time" id="0x7f0b004a" />
-    <public type="id" name="tip" id="0x7f0b004b" />
-    <public type="id" name="progress" id="0x7f0b004c" />
-    <public type="id" name="share_container" id="0x7f0b004d" />
-    <public type="id" name="share_targets" id="0x7f0b004e" />
-    <public type="id" name="share_menu_slider" id="0x7f0b004f" />
-    <public type="id" name="mosaic" id="0x7f0b0050" />
-    <public type="id" name="glassware_icon" id="0x7f0b0051" />
-    <public type="id" name="slider_control" id="0x7f0b0052" />
-    <public type="id" name="indeterminate_slider" id="0x7f0b0053" />
-    <public type="id" name="crop_marks" id="0x7f0b0054" />
-    <public type="id" name="thumbnail" id="0x7f0b0055" />
-    <public type="id" name="final_image" id="0x7f0b0056" />
-    <public type="id" name="extend_video" id="0x7f0b0057" />
-    <public type="id" name="stop_recording" id="0x7f0b0058" />
+    <public type="id" name="image" id="0x7f0b003d" />
+    <public type="id" name="text" id="0x7f0b003e" />
+    <public type="id" name="ms_dialog" id="0x7f0b003f" />
+    <public type="id" name="icon" id="0x7f0b0040" />
+    <public type="id" name="label" id="0x7f0b0041" />
+    <public type="id" name="secondary_label" id="0x7f0b0042" />
+    <public type="id" name="options" id="0x7f0b0043" />
+    <public type="id" name="description" id="0x7f0b0044" />
+    <public type="id" name="viewfinder" id="0x7f0b0045" />
+    <public type="id" name="overlay" id="0x7f0b0046" />
+    <public type="id" name="recording_time_wrapper" id="0x7f0b0047" />
+    <public type="id" name="recording_time" id="0x7f0b0048" />
+    <public type="id" name="tip" id="0x7f0b0049" />
+    <public type="id" name="progress" id="0x7f0b004a" />
+    <public type="id" name="share_container" id="0x7f0b004b" />
+    <public type="id" name="share_targets" id="0x7f0b004c" />
+    <public type="id" name="share_menu_slider" id="0x7f0b004d" />
+    <public type="id" name="mosaic" id="0x7f0b004e" />
+    <public type="id" name="glassware_icon" id="0x7f0b004f" />
+    <public type="id" name="slider_control" id="0x7f0b0050" />
+    <public type="id" name="indeterminate_slider" id="0x7f0b0051" />
+    <public type="id" name="crop_marks" id="0x7f0b0052" />
+    <public type="id" name="thumbnail" id="0x7f0b0053" />
+    <public type="id" name="final_image" id="0x7f0b0054" />
+    <public type="id" name="extend_video" id="0x7f0b0055" />
+    <public type="id" name="stop_recording" id="0x7f0b0056" />
     <public type="integer" name="activity_animation_duration_ms" id="0x7f0c0000" />
     <public type="integer" name="infos_error_duration_ms" id="0x7f0c0001" />
     <public type="integer" name="infos_success_duration_ms" id="0x7f0c0002" />

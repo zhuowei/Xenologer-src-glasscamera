@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 85
+    .line 88
     iput-object p1, p0, Lcom/google/glass/camera/BaseRecordVideoActivity$2;->this$0:Lcom/google/glass/camera/BaseRecordVideoActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 7
 
     .prologue
-    .line 88
+    .line 91
     iget-object v3, p0, Lcom/google/glass/camera/BaseRecordVideoActivity$2;->this$0:Lcom/google/glass/camera/BaseRecordVideoActivity;
 
     #getter for: Lcom/google/glass/camera/BaseRecordVideoActivity;->isVideoExtended:Z
@@ -60,7 +60,7 @@
 
     if-nez v3, :cond_0
 
-    .line 89
+    .line 92
     iget-object v3, p0, Lcom/google/glass/camera/BaseRecordVideoActivity$2;->this$0:Lcom/google/glass/camera/BaseRecordVideoActivity;
 
     #calls: Lcom/google/glass/camera/BaseRecordVideoActivity;->getElapsedRecordingTime()J
@@ -77,7 +77,7 @@
 
     sub-long v0, v3, v5
 
-    .line 90
+    .line 93
     .local v0, elapsed:J
     invoke-static {}, Lcom/google/glass/camera/BaseRecordVideoActivity;->access$700()J
 
@@ -87,19 +87,19 @@
 
     if-lez v3, :cond_1
 
-    .line 91
+    .line 94
     iget-object v3, p0, Lcom/google/glass/camera/BaseRecordVideoActivity$2;->this$0:Lcom/google/glass/camera/BaseRecordVideoActivity;
 
     #calls: Lcom/google/glass/camera/BaseRecordVideoActivity;->stopRecording()V
     invoke-static {v3}, Lcom/google/glass/camera/BaseRecordVideoActivity;->access$800(Lcom/google/glass/camera/BaseRecordVideoActivity;)V
 
-    .line 100
+    .line 103
     .end local v0           #elapsed:J
     :cond_0
     :goto_0
     return-void
 
-    .line 94
+    .line 97
     .restart local v0       #elapsed:J
     :cond_1
     long-to-float v3, v0
@@ -112,7 +112,7 @@
 
     div-float v2, v3, v4
 
-    .line 95
+    .line 98
     .local v2, progress:F
     iget-object v3, p0, Lcom/google/glass/camera/BaseRecordVideoActivity$2;->this$0:Lcom/google/glass/camera/BaseRecordVideoActivity;
 
@@ -123,7 +123,7 @@
 
     invoke-virtual {v3, v2}, Lcom/google/glass/widget/SliderView;->setManualProgress(F)V
 
-    .line 97
+    .line 100
     invoke-static {}, Lcom/google/glass/camera/BaseRecordVideoActivity;->access$300()Landroid/os/Handler;
 
     move-result-object v3

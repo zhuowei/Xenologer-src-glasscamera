@@ -1014,7 +1014,7 @@
 
     .prologue
     .line 154
-    sget-object v0, Lcom/google/googlex/glass/common/proto/GlasswareRegistry;->internal_static_googlex_glass_common_proto_GlasswareRegistryEntry_descriptor:Lcom/google/protobuf/Descriptors$Descriptor;
+    sget-object v0, Lcom/google/googlex/glass/common/proto/GlasswareRegistryOuterClass;->internal_static_googlex_glass_common_proto_GlasswareRegistryEntry_descriptor:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
 .end method
@@ -3000,7 +3000,7 @@
 
     .prologue
     .line 159
-    sget-object v0, Lcom/google/googlex/glass/common/proto/GlasswareRegistry;->internal_static_googlex_glass_common_proto_GlasswareRegistryEntry_fieldAccessorTable:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
+    sget-object v0, Lcom/google/googlex/glass/common/proto/GlasswareRegistryOuterClass;->internal_static_googlex_glass_common_proto_GlasswareRegistryEntry_fieldAccessorTable:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-class v1, Lcom/google/googlex/glass/common/proto/GlasswareRegistryEntry;
 
@@ -3023,7 +3023,7 @@
     if-nez v0, :cond_0
 
     .line 1097
-    const-string v0, "com.google.googlex.glass.common.proto.MutableGlasswareRegistry$GlasswareRegistryEntry"
+    const-string v0, "com.google.googlex.glass.common.proto.MutableGlasswareRegistryOuterClass$GlasswareRegistryEntry"
 
     invoke-static {v0}, Lcom/google/googlex/glass/common/proto/GlasswareRegistryEntry;->internalMutableDefault(Ljava/lang/String;)Lcom/google/protobuf/MutableMessage;
 

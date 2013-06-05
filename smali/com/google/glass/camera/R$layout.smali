@@ -17,7 +17,7 @@
 # static fields
 .field public static final bluetooth_settings_item:I = 0x7f030000
 
-.field public static final entity_view:I = 0x7f030001
+.field public static final entity_scroller:I = 0x7f030001
 
 .field public static final feedback:I = 0x7f030002
 
@@ -61,25 +61,23 @@
 
 .field public static final mosaic_cell_small_remaining:I = 0x7f030016
 
-.field public static final option_menu:I = 0x7f030017
+.field public static final option_menu_dialog:I = 0x7f030017
 
-.field public static final option_menu_dialog:I = 0x7f030018
+.field public static final option_menu_item:I = 0x7f030018
 
-.field public static final option_menu_item:I = 0x7f030019
+.field public static final qr_scan:I = 0x7f030019
 
-.field public static final qr_scan:I = 0x7f03001a
+.field public static final record_video_activity:I = 0x7f03001a
 
-.field public static final record_video_activity:I = 0x7f03001b
+.field public static final share_activity:I = 0x7f03001b
 
-.field public static final share_activity:I = 0x7f03001c
+.field public static final share_target:I = 0x7f03001c
 
-.field public static final share_target:I = 0x7f03001d
+.field public static final slider:I = 0x7f03001d
 
-.field public static final slider:I = 0x7f03001e
+.field public static final take_picture_activity:I = 0x7f03001e
 
-.field public static final take_picture_activity:I = 0x7f03001f
-
-.field public static final vertical_divider:I = 0x7f030020
+.field public static final vertical_divider:I = 0x7f03001f
 
 
 # direct methods
@@ -87,7 +85,7 @@
     .locals 0
 
     .prologue
-    .line 483
+    .line 481
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

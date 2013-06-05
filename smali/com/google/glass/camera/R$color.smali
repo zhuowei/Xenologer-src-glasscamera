@@ -33,6 +33,8 @@
 
 .field public static final gf_shadow:I = 0x7f060001
 
+.field public static final people_grid_frame_focused:I = 0x7f06000e
+
 .field public static final person_count_text_gray:I = 0x7f060004
 
 .field public static final state_green:I = 0x7f06000a

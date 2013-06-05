@@ -40,7 +40,7 @@
     .parameter
 
     .prologue
-    .line 161
+    .line 163
     iput-object p1, p0, Lcom/google/glass/camera/TakePictureActivity$3;->this$0:Lcom/google/glass/camera/TakePictureActivity;
 
     iput-object p2, p0, Lcom/google/glass/camera/TakePictureActivity$3;->val$picture:Lcom/google/glass/camera/Picture;
@@ -57,13 +57,16 @@
     .parameter "params"
 
     .prologue
-    .line 173
+    .line 175
+    invoke-static {}, Lcom/google/glass/util/Assert;->assertNotUiThread()V
+
+    .line 178
     iget-object v0, p0, Lcom/google/glass/camera/TakePictureActivity$3;->this$0:Lcom/google/glass/camera/TakePictureActivity;
 
     iget-object v1, p0, Lcom/google/glass/camera/TakePictureActivity$3;->this$0:Lcom/google/glass/camera/TakePictureActivity;
 
     #getter for: Lcom/google/glass/camera/TakePictureActivity;->timelineHelper:Lcom/google/glass/timeline/TimelineHelper;
-    invoke-static {v1}, Lcom/google/glass/camera/TakePictureActivity;->access$100(Lcom/google/glass/camera/TakePictureActivity;)Lcom/google/glass/timeline/TimelineHelper;
+    invoke-static {v1}, Lcom/google/glass/camera/TakePictureActivity;->access$200(Lcom/google/glass/camera/TakePictureActivity;)Lcom/google/glass/timeline/TimelineHelper;
 
     move-result-object v1
 
@@ -83,7 +86,7 @@
     .parameter "x0"
 
     .prologue
-    .line 161
+    .line 163
     check-cast p1, [Ljava/lang/Void;
 
     .end local p1
@@ -99,15 +102,16 @@
     .parameter "result"
 
     .prologue
-    .line 179
+    .line 184
     invoke-static {}, Lcom/google/glass/util/Assert;->assertUiThread()V
 
-    .line 182
+    .line 187
     iget-object v0, p0, Lcom/google/glass/camera/TakePictureActivity$3;->this$0:Lcom/google/glass/camera/TakePictureActivity;
 
-    iput-object p1, v0, Lcom/google/glass/camera/TakePictureActivity;->pictureItem:Lcom/google/googlex/glass/common/proto/TimelineItem;
+    #setter for: Lcom/google/glass/camera/TakePictureActivity;->pictureItem:Lcom/google/googlex/glass/common/proto/TimelineItem;
+    invoke-static {v0, p1}, Lcom/google/glass/camera/TakePictureActivity;->access$102(Lcom/google/glass/camera/TakePictureActivity;Lcom/google/googlex/glass/common/proto/TimelineItem;)Lcom/google/googlex/glass/common/proto/TimelineItem;
 
-    .line 183
+    .line 188
     return-void
 .end method
 
@@ -116,7 +120,7 @@
     .parameter "x0"
 
     .prologue
-    .line 161
+    .line 163
     check-cast p1, Lcom/google/googlex/glass/common/proto/TimelineItem;
 
     .end local p1
@@ -129,10 +133,16 @@
     .locals 1
 
     .prologue
-    .line 166
+    .line 168
+    invoke-static {}, Lcom/google/glass/util/Assert;->assertUiThread()V
+
+    .line 170
     iget-object v0, p0, Lcom/google/glass/camera/TakePictureActivity$3;->this$0:Lcom/google/glass/camera/TakePictureActivity;
 
-    iget-object v0, v0, Lcom/google/glass/camera/TakePictureActivity;->pictureItem:Lcom/google/googlex/glass/common/proto/TimelineItem;
+    #getter for: Lcom/google/glass/camera/TakePictureActivity;->pictureItem:Lcom/google/googlex/glass/common/proto/TimelineItem;
+    invoke-static {v0}, Lcom/google/glass/camera/TakePictureActivity;->access$100(Lcom/google/glass/camera/TakePictureActivity;)Lcom/google/googlex/glass/common/proto/TimelineItem;
+
+    move-result-object v0
 
     invoke-static {v0}, Lcom/google/googlex/glass/common/proto/TimelineItem;->newBuilder(Lcom/google/googlex/glass/common/proto/TimelineItem;)Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;
 
@@ -140,6 +150,6 @@
 
     iput-object v0, p0, Lcom/google/glass/camera/TakePictureActivity$3;->itemBuilder:Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;
 
-    .line 167
+    .line 171
     return-void
 .end method

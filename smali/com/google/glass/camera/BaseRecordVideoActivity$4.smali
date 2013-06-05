@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 131
+    .line 134
     iput-object p1, p0, Lcom/google/glass/camera/BaseRecordVideoActivity$4;->this$0:Lcom/google/glass/camera/BaseRecordVideoActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 134
+    .line 137
     iget-object v1, p0, Lcom/google/glass/camera/BaseRecordVideoActivity$4;->this$0:Lcom/google/glass/camera/BaseRecordVideoActivity;
 
     sget v2, Lcom/google/glass/camera/R$id;->tip:I
@@ -52,7 +52,7 @@
 
     move-result-object v0
 
-    .line 135
+    .line 138
     .local v0, tip:Landroid/view/View;
     invoke-virtual {v0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -72,7 +72,7 @@
 
     invoke-virtual {v1}, Landroid/view/ViewPropertyAnimator;->start()V
 
-    .line 136
+    .line 139
     iget-object v1, p0, Lcom/google/glass/camera/BaseRecordVideoActivity$4;->this$0:Lcom/google/glass/camera/BaseRecordVideoActivity;
 
     #getter for: Lcom/google/glass/camera/BaseRecordVideoActivity;->timerWrapper:Landroid/view/View;
@@ -98,6 +98,6 @@
 
     invoke-virtual {v1}, Landroid/view/ViewPropertyAnimator;->start()V
 
-    .line 137
+    .line 140
     return-void
 .end method

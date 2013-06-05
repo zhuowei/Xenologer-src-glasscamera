@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 104
+    .line 107
     iput-object p1, p0, Lcom/google/glass/camera/BaseRecordVideoActivity$3;->this$0:Lcom/google/glass/camera/BaseRecordVideoActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .prologue
     const-wide/16 v5, 0xfa
 
-    .line 107
+    .line 110
     iget-object v2, p0, Lcom/google/glass/camera/BaseRecordVideoActivity$3;->this$0:Lcom/google/glass/camera/BaseRecordVideoActivity;
 
     #getter for: Lcom/google/glass/camera/BaseRecordVideoActivity;->isVideoExtended:Z
@@ -53,11 +53,11 @@
 
     if-eqz v2, :cond_0
 
-    .line 127
+    .line 130
     :goto_0
     return-void
 
-    .line 111
+    .line 114
     :cond_0
     iget-object v2, p0, Lcom/google/glass/camera/BaseRecordVideoActivity$3;->this$0:Lcom/google/glass/camera/BaseRecordVideoActivity;
 
@@ -67,13 +67,13 @@
 
     move-result-object v1
 
-    .line 112
+    .line 115
     .local v1, tip:Landroid/view/View;
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 113
+    .line 116
     iget-object v2, p0, Lcom/google/glass/camera/BaseRecordVideoActivity$3;->this$0:Lcom/google/glass/camera/BaseRecordVideoActivity;
 
     invoke-virtual {v2}, Lcom/google/glass/camera/BaseRecordVideoActivity;->getResources()Landroid/content/res/Resources;
@@ -86,7 +86,7 @@
 
     move-result v0
 
-    .line 114
+    .line 117
     .local v0, offset:F
     iget-object v2, p0, Lcom/google/glass/camera/BaseRecordVideoActivity$3;->this$0:Lcom/google/glass/camera/BaseRecordVideoActivity;
 
@@ -119,12 +119,12 @@
 
     invoke-virtual {v2}, Landroid/view/ViewPropertyAnimator;->start()V
 
-    .line 119
+    .line 122
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setAlpha(F)V
 
-    .line 120
+    .line 123
     invoke-virtual {v1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v2
@@ -155,7 +155,7 @@
 
     invoke-virtual {v2}, Landroid/view/ViewPropertyAnimator;->start()V
 
-    .line 126
+    .line 129
     invoke-static {}, Lcom/google/glass/camera/BaseRecordVideoActivity;->access$300()Landroid/os/Handler;
 
     move-result-object v2

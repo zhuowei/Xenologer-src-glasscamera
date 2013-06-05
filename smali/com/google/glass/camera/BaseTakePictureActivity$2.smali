@@ -46,7 +46,7 @@
     iget-object v1, p0, Lcom/google/glass/camera/BaseTakePictureActivity$2;->this$0:Lcom/google/glass/camera/BaseTakePictureActivity;
 
     #calls: Lcom/google/glass/camera/BaseTakePictureActivity;->getTag()Ljava/lang/String;
-    invoke-static {v1}, Lcom/google/glass/camera/BaseTakePictureActivity;->access$600(Lcom/google/glass/camera/BaseTakePictureActivity;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/google/glass/camera/BaseTakePictureActivity;->access$500(Lcom/google/glass/camera/BaseTakePictureActivity;)Ljava/lang/String;
 
     move-result-object v1
 

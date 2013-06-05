@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 79
+    .line 78
     iput-object p1, p0, Lcom/google/glass/camera/TakePictureActivity$1;->this$0:Lcom/google/glass/camera/TakePictureActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,12 +41,12 @@
     .locals 1
 
     .prologue
-    .line 84
+    .line 83
     iget-object v0, p0, Lcom/google/glass/camera/TakePictureActivity$1;->this$0:Lcom/google/glass/camera/TakePictureActivity;
 
     #calls: Lcom/google/glass/camera/TakePictureActivity;->finishAndTurnScreenOffIfRequested()V
     invoke-static {v0}, Lcom/google/glass/camera/TakePictureActivity;->access$000(Lcom/google/glass/camera/TakePictureActivity;)V
 
-    .line 85
+    .line 84
     return-void
 .end method

@@ -30,7 +30,7 @@
     .parameter
 
     .prologue
-    .line 236
+    .line 241
     iput-object p1, p0, Lcom/google/glass/camera/TakePictureActivity$4$1;->this$0:Lcom/google/glass/camera/TakePictureActivity$4;
 
     iput-object p2, p0, Lcom/google/glass/camera/TakePictureActivity$4$1;->val$thumbnail:Landroid/graphics/Bitmap;
@@ -46,7 +46,7 @@
     .locals 2
 
     .prologue
-    .line 244
+    .line 249
     iget-object v0, p0, Lcom/google/glass/camera/TakePictureActivity$4$1;->val$thumbnail:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getByteCount()I
@@ -63,7 +63,7 @@
     .parameter "os"
 
     .prologue
-    .line 239
+    .line 244
     iget-object v0, p0, Lcom/google/glass/camera/TakePictureActivity$4$1;->val$thumbnail:Landroid/graphics/Bitmap;
 
     sget-object v1, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
@@ -72,6 +72,6 @@
 
     invoke-virtual {v0, v1, v2, p1}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
-    .line 240
+    .line 245
     return-void
 .end method

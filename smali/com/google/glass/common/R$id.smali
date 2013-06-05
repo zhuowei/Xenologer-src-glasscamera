@@ -39,13 +39,13 @@
 
 .field public static final content_view_stub:I = 0x7f0b003b
 
-.field public static final crop_marks:I = 0x7f0b0054
+.field public static final crop_marks:I = 0x7f0b0052
 
-.field public static final description:I = 0x7f0b0046
+.field public static final description:I = 0x7f0b0044
 
-.field public static final extend_video:I = 0x7f0b0057
+.field public static final extend_video:I = 0x7f0b0055
 
-.field public static final final_image:I = 0x7f0b0056
+.field public static final final_image:I = 0x7f0b0054
 
 .field public static final gf_account_spinner:I = 0x7f0b002d
 
@@ -103,59 +103,57 @@
 
 .field public static final gf_value:I = 0x7f0b0031
 
-.field public static final glassware_icon:I = 0x7f0b0051
+.field public static final glassware_icon:I = 0x7f0b004f
 
-.field public static final icon:I = 0x7f0b003e
+.field public static final icon:I = 0x7f0b0040
 
-.field public static final icons:I = 0x7f0b0041
+.field public static final image:I = 0x7f0b003d
 
-.field public static final image:I = 0x7f0b001c
-
-.field public static final indeterminate_slider:I = 0x7f0b0053
+.field public static final indeterminate_slider:I = 0x7f0b0051
 
 .field public static final italic:I = 0x7f0b0006
 
-.field public static final label:I = 0x7f0b001d
-
-.field public static final label_container:I = 0x7f0b0042
-
-.field public static final label_current:I = 0x7f0b0043
-
-.field public static final label_other:I = 0x7f0b0044
+.field public static final label:I = 0x7f0b0041
 
 .field public static final light:I = 0x7f0b0002
 
 .field public static final medium:I = 0x7f0b0003
 
-.field public static final mosaic:I = 0x7f0b0050
+.field public static final mosaic:I = 0x7f0b004e
 
-.field public static final ms_dialog:I = 0x7f0b003d
+.field public static final ms_dialog:I = 0x7f0b003f
 
-.field public static final options:I = 0x7f0b0045
+.field public static final options:I = 0x7f0b0043
 
-.field public static final overlay:I = 0x7f0b0048
+.field public static final overlay:I = 0x7f0b0046
 
-.field public static final progress:I = 0x7f0b004c
+.field public static final progress:I = 0x7f0b004a
 
-.field public static final recording_time:I = 0x7f0b004a
+.field public static final recording_time:I = 0x7f0b0048
 
-.field public static final recording_time_wrapper:I = 0x7f0b0049
+.field public static final recording_time_wrapper:I = 0x7f0b0047
 
 .field public static final regular:I = 0x7f0b0000
 
-.field public static final secondary_label:I = 0x7f0b0040
+.field public static final root:I = 0x7f0b001c
 
-.field public static final share_container:I = 0x7f0b004d
+.field public static final scroll_view:I = 0x7f0b001d
 
-.field public static final share_menu_slider:I = 0x7f0b004f
+.field public static final secondary_label:I = 0x7f0b0042
 
-.field public static final share_targets:I = 0x7f0b004e
+.field public static final share_container:I = 0x7f0b004b
 
-.field public static final slider:I = 0x7f0b003f
+.field public static final share_menu_slider:I = 0x7f0b004d
 
-.field public static final slider_control:I = 0x7f0b0052
+.field public static final share_targets:I = 0x7f0b004c
 
-.field public static final stop_recording:I = 0x7f0b0058
+.field public static final slider:I = 0x7f0b001e
+
+.field public static final slider_control:I = 0x7f0b0050
+
+.field public static final stop_recording:I = 0x7f0b0056
+
+.field public static final tag_card_state_manager:I = 0x7f0b0009
 
 .field public static final tag_cell_layout_type:I = 0x7f0b0014
 
@@ -166,8 +164,6 @@
 .field public static final tag_horizontal_scroll_item:I = 0x7f0b000a
 
 .field public static final tag_horizontal_scroll_item_position:I = 0x7f0b0008
-
-.field public static final tag_horizontal_scroll_item_state_manager:I = 0x7f0b0009
 
 .field public static final tag_horizontal_scroll_item_view_binder:I = 0x7f0b000c
 
@@ -183,15 +179,15 @@
 
 .field public static final tag_view_binding_index:I = 0x7f0b0011
 
-.field public static final text:I = 0x7f0b001e
+.field public static final text:I = 0x7f0b003e
 
 .field public static final thin:I = 0x7f0b0001
 
-.field public static final thumbnail:I = 0x7f0b0055
+.field public static final thumbnail:I = 0x7f0b0053
 
-.field public static final tip:I = 0x7f0b004b
+.field public static final tip:I = 0x7f0b0049
 
-.field public static final viewfinder:I = 0x7f0b0047
+.field public static final viewfinder:I = 0x7f0b0045
 
 
 # direct methods

@@ -136,37 +136,37 @@
     invoke-static {v1, p1, v2, v3}, Lcom/google/glass/camera/BaseTakePictureActivity;->fadeInImage(Landroid/widget/ImageView;Landroid/graphics/Bitmap;J)V
 
     .line 117
-    const-string v2, "s"
+    const-string v1, "s"
 
-    iget-object v1, p0, Lcom/google/glass/camera/BaseTakePictureActivity$2$1;->val$picture:Lcom/google/glass/camera/Picture;
+    iget-object v2, p0, Lcom/google/glass/camera/BaseTakePictureActivity$2$1;->val$picture:Lcom/google/glass/camera/Picture;
 
-    invoke-virtual {v1}, Lcom/google/glass/camera/Picture;->getShutterTime()J
+    invoke-virtual {v2}, Lcom/google/glass/camera/Picture;->getShutterTime()J
 
-    move-result-wide v3
+    move-result-wide v2
 
-    iget-object v1, p0, Lcom/google/glass/camera/BaseTakePictureActivity$2$1;->val$picture:Lcom/google/glass/camera/Picture;
+    iget-object v4, p0, Lcom/google/glass/camera/BaseTakePictureActivity$2$1;->val$picture:Lcom/google/glass/camera/Picture;
 
-    invoke-virtual {v1}, Lcom/google/glass/camera/Picture;->getRequestTime()J
+    invoke-virtual {v4}, Lcom/google/glass/camera/Picture;->getRequestTime()J
 
-    move-result-wide v5
+    move-result-wide v4
 
-    sub-long/2addr v3, v5
+    sub-long/2addr v2, v4
 
-    invoke-static {v3, v4}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
+    invoke-static {v2, v3}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v2
 
-    const/16 v1, 0x8
+    const/16 v3, 0x8
 
-    new-array v4, v1, [Ljava/lang/Object;
+    new-array v3, v3, [Ljava/lang/Object;
 
-    const/4 v1, 0x0
+    const/4 v4, 0x0
 
     const-string v5, "t"
 
-    aput-object v5, v4, v1
+    aput-object v5, v3, v4
 
-    const/4 v1, 0x1
+    const/4 v4, 0x1
 
     iget-object v5, p0, Lcom/google/glass/camera/BaseTakePictureActivity$2$1;->val$picture:Lcom/google/glass/camera/Picture;
 
@@ -186,15 +186,15 @@
 
     move-result-object v5
 
-    aput-object v5, v4, v1
+    aput-object v5, v3, v4
 
-    const/4 v1, 0x2
+    const/4 v4, 0x2
 
     const-string v5, "j"
 
-    aput-object v5, v4, v1
+    aput-object v5, v3, v4
 
-    const/4 v1, 0x3
+    const/4 v4, 0x3
 
     iget-object v5, p0, Lcom/google/glass/camera/BaseTakePictureActivity$2$1;->val$picture:Lcom/google/glass/camera/Picture;
 
@@ -214,15 +214,15 @@
 
     move-result-object v5
 
-    aput-object v5, v4, v1
+    aput-object v5, v3, v4
 
-    const/4 v1, 0x4
+    const/4 v4, 0x4
 
     const-string v5, "c"
 
-    aput-object v5, v4, v1
+    aput-object v5, v3, v4
 
-    const/4 v1, 0x5
+    const/4 v4, 0x5
 
     iget-object v5, p0, Lcom/google/glass/camera/BaseTakePictureActivity$2$1;->val$picture:Lcom/google/glass/camera/Picture;
 
@@ -234,30 +234,29 @@
 
     move-result-object v5
 
-    aput-object v5, v4, v1
+    aput-object v5, v3, v4
 
-    const/4 v1, 0x6
+    const/4 v4, 0x6
 
     const-string v5, "g"
 
-    aput-object v5, v4, v1
+    aput-object v5, v3, v4
 
-    const/4 v5, 0x7
+    const/4 v4, 0x7
 
-    iget-object v1, p0, Lcom/google/glass/camera/BaseTakePictureActivity$2$1;->val$picture:Lcom/google/glass/camera/Picture;
+    iget-object v5, p0, Lcom/google/glass/camera/BaseTakePictureActivity$2$1;->val$picture:Lcom/google/glass/camera/Picture;
 
-    invoke-virtual {v1}, Lcom/google/glass/camera/Picture;->getIsGcam()Z
+    invoke-static {v5}, Lcom/google/glass/camera/PictureWrapper;->getGcamType(Lcom/google/glass/camera/Picture;)Lcom/google/glass/camera/PictureWrapper$GcamType;
 
-    move-result v1
+    move-result-object v5
 
-    if-eqz v1, :cond_0
+    invoke-virtual {v5}, Lcom/google/glass/camera/PictureWrapper$GcamType;->getLoggingCode()Ljava/lang/String;
 
-    const-string v1, "1"
+    move-result-object v5
 
-    :goto_0
-    aput-object v1, v4, v5
+    aput-object v5, v3, v4
 
-    invoke-static {v2, v3, v4}, Lcom/google/glass/logging/UserEventHelper;->createEventTuple(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1, v2, v3}, Lcom/google/glass/logging/UserEventHelper;->createEventTuple(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -269,18 +268,10 @@
 
     sget-object v2, Lcom/google/glass/logging/UserEventAction;->CAMERA_TIMINGS:Lcom/google/glass/logging/UserEventAction;
 
-    #calls: Lcom/google/glass/camera/BaseTakePictureActivity;->logUserEvent(Lcom/google/glass/logging/UserEventAction;Ljava/lang/String;)V
-    invoke-static {v1, v2, v0}, Lcom/google/glass/camera/BaseTakePictureActivity;->access$500(Lcom/google/glass/camera/BaseTakePictureActivity;Lcom/google/glass/logging/UserEventAction;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v0}, Lcom/google/glass/camera/BaseTakePictureActivity;->logUserEvent(Lcom/google/glass/logging/UserEventAction;Ljava/lang/String;)V
 
     .line 129
     return-void
-
-    .line 117
-    .end local v0           #timingData:Ljava/lang/String;
-    :cond_0
-    const-string v1, "0"
-
-    goto :goto_0
 .end method
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V

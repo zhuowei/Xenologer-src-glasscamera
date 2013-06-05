@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 72
+    .line 75
     iput-object p1, p0, Lcom/google/glass/camera/BaseRecordVideoActivity$1;->this$0:Lcom/google/glass/camera/BaseRecordVideoActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 4
 
     .prologue
-    .line 77
+    .line 80
     iget-object v0, p0, Lcom/google/glass/camera/BaseRecordVideoActivity$1;->this$0:Lcom/google/glass/camera/BaseRecordVideoActivity;
 
     iget-object v1, p0, Lcom/google/glass/camera/BaseRecordVideoActivity$1;->this$0:Lcom/google/glass/camera/BaseRecordVideoActivity;
@@ -54,7 +54,7 @@
     #calls: Lcom/google/glass/camera/BaseRecordVideoActivity;->setTimer(J)V
     invoke-static {v0, v1, v2}, Lcom/google/glass/camera/BaseRecordVideoActivity;->access$100(Lcom/google/glass/camera/BaseRecordVideoActivity;J)V
 
-    .line 80
+    .line 83
     invoke-static {}, Lcom/google/glass/camera/BaseRecordVideoActivity;->access$300()Landroid/os/Handler;
 
     move-result-object v0
@@ -70,6 +70,6 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 81
+    .line 84
     return-void
 .end method

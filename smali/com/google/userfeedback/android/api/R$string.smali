@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final app_name:I = 0x7f080090
+.field public static final app_name:I = 0x7f080094
 
 .field public static final bluetooth:I = 0x7f08006e
 
@@ -23,27 +23,27 @@
 
 .field public static final bugreport_title_manual:I = 0x7f080061
 
-.field public static final camera_error:I = 0x7f080094
+.field public static final camera_error:I = 0x7f080098
 
 .field public static final capturing_bugreport:I = 0x7f080046
 
 .field public static final date_format_pattern:I = 0x7f08004c
 
-.field public static final error_bluetooth_headset_not_active:I = 0x7f080076
+.field public static final error_bluetooth_headset_not_active:I = 0x7f080077
 
-.field public static final error_edit_contacts:I = 0x7f08007a
+.field public static final error_edit_contacts:I = 0x7f08007b
 
-.field public static final error_no_phone_number:I = 0x7f080077
+.field public static final error_no_phone_number:I = 0x7f080078
 
-.field public static final error_phone_in_use:I = 0x7f080078
+.field public static final error_phone_in_use:I = 0x7f080079
 
-.field public static final error_tap_connection_settings:I = 0x7f080079
+.field public static final error_tap_connection_settings:I = 0x7f08007a
 
-.field public static final extend_video:I = 0x7f080092
+.field public static final extend_video:I = 0x7f080096
 
-.field public static final extend_video_tip:I = 0x7f080093
+.field public static final extend_video_tip:I = 0x7f080097
 
-.field public static final full_storage_dialog_message:I = 0x7f080074
+.field public static final full_storage_dialog_message:I = 0x7f080075
 
 .field public static final gf_anonymous:I = 0x7f080004
 
@@ -185,7 +185,7 @@
 
 .field public static final gf_yes:I = 0x7f080038
 
-.field public static final low_storage_dialog_message:I = 0x7f080073
+.field public static final low_storage_dialog_message:I = 0x7f080074
 
 .field public static final phone_call_calling:I = 0x7f080065
 
@@ -211,17 +211,19 @@
 
 .field public static final phone_call_unmute:I = 0x7f080063
 
-.field public static final qr_scan_tips:I = 0x7f080072
+.field public static final qr_scan_tips:I = 0x7f080073
 
 .field public static final sharing_menu_share_confirmed:I = 0x7f080071
 
 .field public static final sharing_menu_share_confirming:I = 0x7f080070
 
+.field public static final sharing_menu_tap_to_annotate:I = 0x7f080072
+
 .field public static final sharing_no_share_targets:I = 0x7f08006f
 
-.field public static final stop_recording:I = 0x7f080091
+.field public static final stop_recording:I = 0x7f080095
 
-.field public static final storage_dialog_sub_message:I = 0x7f080075
+.field public static final storage_dialog_sub_message:I = 0x7f080076
 
 .field public static final time_format_pattern_12h:I = 0x7f080048
 
@@ -229,45 +231,51 @@
 
 .field public static final time_format_pattern_24h:I = 0x7f08004a
 
-.field public static final timeline_menu_delete:I = 0x7f08007c
+.field public static final timeline_menu_delete:I = 0x7f08007d
 
-.field public static final timeline_menu_delete_confirmed:I = 0x7f08007e
+.field public static final timeline_menu_delete_confirmed:I = 0x7f08007f
 
-.field public static final timeline_menu_delete_confirming:I = 0x7f08007d
+.field public static final timeline_menu_delete_confirming:I = 0x7f08007e
 
-.field public static final timeline_menu_error_in_a_call_no_call:I = 0x7f08008e
+.field public static final timeline_menu_error_in_a_call_no_call:I = 0x7f080090
 
-.field public static final timeline_menu_error_in_a_call_no_hangout:I = 0x7f08008b
+.field public static final timeline_menu_error_in_a_call_no_hangout:I = 0x7f08008d
 
-.field public static final timeline_menu_error_in_a_hangout_no_call:I = 0x7f08008c
+.field public static final timeline_menu_error_in_a_hangout_no_call:I = 0x7f08008e
 
-.field public static final timeline_menu_error_in_a_hangout_no_hangout:I = 0x7f08008d
+.field public static final timeline_menu_error_in_a_hangout_no_hangout:I = 0x7f08008f
 
-.field public static final timeline_menu_expand_search:I = 0x7f080085
+.field public static final timeline_menu_expand_search:I = 0x7f080086
 
-.field public static final timeline_menu_hangout:I = 0x7f080086
+.field public static final timeline_menu_hangout:I = 0x7f080087
 
-.field public static final timeline_menu_navigate:I = 0x7f080084
+.field public static final timeline_menu_navigate:I = 0x7f080085
 
-.field public static final timeline_menu_new_search:I = 0x7f08008a
+.field public static final timeline_menu_new_search:I = 0x7f08008b
 
-.field public static final timeline_menu_pin:I = 0x7f080087
+.field public static final timeline_menu_pin:I = 0x7f080088
 
-.field public static final timeline_menu_read_aloud:I = 0x7f080082
+.field public static final timeline_menu_read_aloud:I = 0x7f080083
 
-.field public static final timeline_menu_read_more:I = 0x7f080089
+.field public static final timeline_menu_read_more:I = 0x7f08008a
 
-.field public static final timeline_menu_reply:I = 0x7f08007f
+.field public static final timeline_menu_reply:I = 0x7f080080
 
-.field public static final timeline_menu_reply_all:I = 0x7f080080
+.field public static final timeline_menu_reply_all:I = 0x7f080081
 
-.field public static final timeline_menu_retry:I = 0x7f080081
+.field public static final timeline_menu_retry:I = 0x7f080082
 
-.field public static final timeline_menu_share:I = 0x7f08007b
+.field public static final timeline_menu_share:I = 0x7f08007c
 
-.field public static final timeline_menu_unpin:I = 0x7f080088
+.field public static final timeline_menu_unpin:I = 0x7f080089
 
-.field public static final timeline_menu_voice_call:I = 0x7f080083
+.field public static final timeline_menu_view_website:I = 0x7f08008c
+
+.field public static final timeline_menu_voice_call:I = 0x7f080084
+
+.field public static final timeline_sms_signature:I = 0x7f080092
+
+.field public static final timeline_sms_signature_format:I = 0x7f080091
 
 .field public static final timestamp_day:I = 0x7f080059
 
@@ -309,7 +317,7 @@
 
 .field public static final timestamp_yesterday:I = 0x7f080050
 
-.field public static final voice_message_send_retrying:I = 0x7f08008f
+.field public static final voice_message_send_retrying:I = 0x7f080093
 
 .field public static final yesterday:I = 0x7f08004b
 
@@ -319,7 +327,7 @@
     .locals 0
 
     .prologue
-    .line 536
+    .line 533
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

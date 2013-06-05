@@ -12,10 +12,7 @@
 # instance fields
 .field private optionsHelper:Lcom/google/glass/timeline/TimelineOptionsHelper;
 
-.field pictureItem:Lcom/google/googlex/glass/common/proto/TimelineItem;
-    .annotation build Lcom/google/common/annotations/VisibleForTesting;
-    .end annotation
-.end field
+.field private pictureItem:Lcom/google/googlex/glass/common/proto/TimelineItem;
 
 .field private final timelineExecutor:Ljava/util/concurrent/ExecutorService;
 
@@ -93,7 +90,30 @@
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/google/glass/camera/TakePictureActivity;)Lcom/google/glass/timeline/TimelineHelper;
+.method static synthetic access$100(Lcom/google/glass/camera/TakePictureActivity;)Lcom/google/googlex/glass/common/proto/TimelineItem;
+    .locals 1
+    .parameter "x0"
+
+    .prologue
+    .line 40
+    iget-object v0, p0, Lcom/google/glass/camera/TakePictureActivity;->pictureItem:Lcom/google/googlex/glass/common/proto/TimelineItem;
+
+    return-object v0
+.end method
+
+.method static synthetic access$102(Lcom/google/glass/camera/TakePictureActivity;Lcom/google/googlex/glass/common/proto/TimelineItem;)Lcom/google/googlex/glass/common/proto/TimelineItem;
+    .locals 0
+    .parameter "x0"
+    .parameter "x1"
+
+    .prologue
+    .line 40
+    iput-object p1, p0, Lcom/google/glass/camera/TakePictureActivity;->pictureItem:Lcom/google/googlex/glass/common/proto/TimelineItem;
+
+    return-object p1
+.end method
+
+.method static synthetic access$200(Lcom/google/glass/camera/TakePictureActivity;)Lcom/google/glass/timeline/TimelineHelper;
     .locals 1
     .parameter "x0"
 
@@ -104,7 +124,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$200()Ljava/lang/String;
+.method static synthetic access$300()Ljava/lang/String;
     .locals 1
 
     .prologue
@@ -122,14 +142,14 @@
     .end annotation
 
     .prologue
-    .line 197
+    .line 202
     sget-object v1, Lcom/google/glass/camera/TakePictureActivity;->TAG:Ljava/lang/String;
 
     const-string v2, "Creating the picture timeline item."
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 198
+    .line 203
     new-instance v1, Lcom/google/glass/util/SettingsSecure;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -142,13 +162,13 @@
 
     move-result-object v0
 
-    .line 202
+    .line 207
     .local v0, builder:Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;
     sget-object v1, Lcom/google/googlex/glass/common/proto/TimelineItem$SyncProtocol;->NEVER:Lcom/google/googlex/glass/common/proto/TimelineItem$SyncProtocol;
 
     invoke-virtual {v0, v1}, Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;->setCloudSyncProtocol(Lcom/google/googlex/glass/common/proto/TimelineItem$SyncProtocol;)Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;
 
-    .line 205
+    .line 210
     invoke-static {}, Lcom/google/googlex/glass/common/proto/MenuItem;->newBuilder()Lcom/google/googlex/glass/common/proto/MenuItem$Builder;
 
     move-result-object v1
@@ -161,7 +181,7 @@
 
     invoke-virtual {v0, v1}, Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;->addMenuItem(Lcom/google/googlex/glass/common/proto/MenuItem$Builder;)Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;
 
-    .line 206
+    .line 211
     invoke-static {}, Lcom/google/googlex/glass/common/proto/MenuItem;->newBuilder()Lcom/google/googlex/glass/common/proto/MenuItem$Builder;
 
     move-result-object v1
@@ -174,7 +194,7 @@
 
     invoke-virtual {v0, v1}, Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;->addMenuItem(Lcom/google/googlex/glass/common/proto/MenuItem$Builder;)Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;
 
-    .line 208
+    .line 213
     invoke-virtual {v0}, Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;->build()Lcom/google/googlex/glass/common/proto/TimelineItem;
 
     move-result-object v1
@@ -192,30 +212,30 @@
     .end annotation
 
     .prologue
-    .line 293
+    .line 298
     invoke-static {}, Lcom/google/glass/util/Assert;->assertNotUiThread()V
 
-    .line 295
+    .line 300
     invoke-virtual {p2}, Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;->getId()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 296
+    .line 301
     .local v0, itemId:Ljava/lang/String;
     new-instance v1, Lcom/google/glass/camera/TakePictureActivity$5;
 
     invoke-direct {v1, v0, p1, p0, p3}, Lcom/google/glass/camera/TakePictureActivity$5;-><init>(Ljava/lang/String;Lcom/google/glass/timeline/TimelineHelper;Landroid/content/Context;Lcom/google/glass/camera/Picture;)V
 
-    .line 330
+    .line 335
     .local v1, update:Lcom/google/glass/timeline/TimelineHelper$Update;
     invoke-static {v1}, Lcom/google/glass/timeline/TimelineHelper;->atomicUpdateTimelineItem(Lcom/google/glass/timeline/TimelineHelper$Update;)V
 
-    .line 331
+    .line 336
     invoke-virtual {v1}, Lcom/google/glass/timeline/TimelineHelper$Update;->getItem()Lcom/google/googlex/glass/common/proto/TimelineItem;
 
     move-result-object v2
 
-    .line 335
+    .line 340
     .local v2, updatedItem:Lcom/google/googlex/glass/common/proto/TimelineItem;
     if-eqz v2, :cond_0
 
@@ -225,7 +245,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 336
+    .line 341
     :cond_0
     sget-object v3, Lcom/google/glass/camera/TakePictureActivity;->TAG:Ljava/lang/String;
 
@@ -233,10 +253,10 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 337
+    .line 342
     const/4 v2, 0x0
 
-    .line 340
+    .line 345
     .end local v2           #updatedItem:Lcom/google/googlex/glass/common/proto/TimelineItem;
     :cond_1
     return-object v2
@@ -253,17 +273,17 @@
     .end annotation
 
     .prologue
-    .line 225
+    .line 230
     invoke-static {}, Lcom/google/glass/util/Assert;->assertNotUiThread()V
 
-    .line 226
+    .line 231
     sget-object v1, Lcom/google/glass/camera/TakePictureActivity;->TAG:Ljava/lang/String;
 
     const-string v2, "Attaching the thumbnmail to the picture timeline item."
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 228
+    .line 233
     new-instance v0, Lcom/google/glass/camera/TakePictureActivity$4;
 
     move-object v1, p3
@@ -278,16 +298,16 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/google/glass/camera/TakePictureActivity$4;-><init>(Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;Lcom/google/glass/camera/Picture;Lcom/google/glass/util/CachedFilesManager;Lcom/google/glass/timeline/TimelineHelper;Landroid/content/Context;)V
 
-    .line 266
+    .line 271
     .local v0, update:Lcom/google/glass/timeline/TimelineHelper$Update;
     invoke-static {v0}, Lcom/google/glass/timeline/TimelineHelper;->atomicUpdateTimelineItem(Lcom/google/glass/timeline/TimelineHelper$Update;)V
 
-    .line 267
+    .line 272
     invoke-virtual {v0}, Lcom/google/glass/timeline/TimelineHelper$Update;->getItem()Lcom/google/googlex/glass/common/proto/TimelineItem;
 
     move-result-object v6
 
-    .line 271
+    .line 276
     .local v6, updatedItem:Lcom/google/googlex/glass/common/proto/TimelineItem;
     if-eqz v6, :cond_0
 
@@ -297,7 +317,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 272
+    .line 277
     :cond_0
     sget-object v1, Lcom/google/glass/camera/TakePictureActivity;->TAG:Ljava/lang/String;
 
@@ -305,10 +325,10 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 273
+    .line 278
     const/4 v6, 0x0
 
-    .line 276
+    .line 281
     .end local v6           #updatedItem:Lcom/google/googlex/glass/common/proto/TimelineItem;
     :cond_1
     return-object v6
@@ -323,7 +343,7 @@
     .parameter "intent"
 
     .prologue
-    .line 93
+    .line 92
     const/4 v0, 0x1
 
     if-ne p1, v0, :cond_0
@@ -332,10 +352,10 @@
 
     if-ne p2, v0, :cond_0
 
-    .line 94
+    .line 93
     invoke-virtual {p0}, Lcom/google/glass/camera/TakePictureActivity;->finishAndTurnScreenOffIfRequested()V
 
-    .line 96
+    .line 95
     :cond_0
     return-void
 .end method
@@ -345,17 +365,17 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 65
+    .line 64
     invoke-super {p0, p1}, Lcom/google/glass/camera/BaseTakePictureActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 67
+    .line 66
     new-instance v0, Lcom/google/glass/timeline/TimelineHelper;
 
     invoke-direct {v0}, Lcom/google/glass/timeline/TimelineHelper;-><init>()V
 
     iput-object v0, p0, Lcom/google/glass/camera/TakePictureActivity;->timelineHelper:Lcom/google/glass/timeline/TimelineHelper;
 
-    .line 68
+    .line 67
     new-instance v0, Lcom/google/glass/timeline/TimelineOptionsHelper;
 
     new-instance v1, Lcom/google/glass/util/IconProvider;
@@ -366,7 +386,7 @@
 
     iput-object v0, p0, Lcom/google/glass/camera/TakePictureActivity;->optionsHelper:Lcom/google/glass/timeline/TimelineOptionsHelper;
 
-    .line 69
+    .line 68
     return-void
 .end method
 
@@ -375,7 +395,7 @@
     .parameter "menu"
 
     .prologue
-    .line 73
+    .line 72
     iget-object v0, p0, Lcom/google/glass/camera/TakePictureActivity;->optionsHelper:Lcom/google/glass/timeline/TimelineOptionsHelper;
 
     iget-object v1, p0, Lcom/google/glass/camera/TakePictureActivity;->pictureItem:Lcom/google/googlex/glass/common/proto/TimelineItem;
@@ -392,7 +412,7 @@
     .parameter "selectedOptionMenuItem"
 
     .prologue
-    .line 78
+    .line 77
     iget-object v0, p0, Lcom/google/glass/camera/TakePictureActivity;->optionsHelper:Lcom/google/glass/timeline/TimelineOptionsHelper;
 
     iget-object v1, p0, Lcom/google/glass/camera/TakePictureActivity;->pictureItem:Lcom/google/googlex/glass/common/proto/TimelineItem;
@@ -413,7 +433,7 @@
     .parameter "picture"
 
     .prologue
-    .line 161
+    .line 163
     new-instance v0, Lcom/google/glass/camera/TakePictureActivity$3;
 
     invoke-direct {v0, p0, p1}, Lcom/google/glass/camera/TakePictureActivity$3;-><init>(Lcom/google/glass/camera/TakePictureActivity;Lcom/google/glass/camera/Picture;)V
@@ -426,7 +446,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/google/glass/camera/TakePictureActivity$3;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 185
+    .line 190
     return-void
 .end method
 
@@ -435,7 +455,7 @@
     .parameter "picture"
 
     .prologue
-    .line 133
+    .line 132
     new-instance v0, Lcom/google/glass/camera/TakePictureActivity$2;
 
     invoke-direct {v0, p0, p1}, Lcom/google/glass/camera/TakePictureActivity$2;-><init>(Lcom/google/glass/camera/TakePictureActivity;Lcom/google/glass/camera/Picture;)V
@@ -448,7 +468,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/google/glass/camera/TakePictureActivity$2;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 157
+    .line 159
     return-void
 .end method
 
@@ -457,7 +477,7 @@
     .parameter "menu"
 
     .prologue
-    .line 123
+    .line 122
     iget-object v0, p0, Lcom/google/glass/camera/TakePictureActivity;->pictureItem:Lcom/google/googlex/glass/common/proto/TimelineItem;
 
     if-eqz v0, :cond_0
@@ -470,11 +490,11 @@
 
     if-nez v0, :cond_1
 
-    .line 124
+    .line 123
     :cond_0
     const/4 v0, 0x0
 
-    .line 128
+    .line 127
     :goto_0
     return v0
 
@@ -494,7 +514,7 @@
     .locals 1
 
     .prologue
-    .line 106
+    .line 105
     sget v0, Lcom/google/glass/camera/R$layout;->take_picture_activity:I
 
     return v0
@@ -506,7 +526,7 @@
     .parameter "requestCode"
 
     .prologue
-    .line 100
+    .line 99
     const-string v0, "should_finish_turn_screen_off"
 
     invoke-virtual {p0}, Lcom/google/glass/camera/TakePictureActivity;->shouldFinishTurnScreenOff()Z
@@ -515,10 +535,10 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 101
+    .line 100
     invoke-super {p0, p1, p2}, Lcom/google/glass/camera/BaseTakePictureActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 102
+    .line 101
     return-void
 .end method
 
@@ -526,7 +546,7 @@
     .locals 1
 
     .prologue
-    .line 113
+    .line 112
     iget-object v0, p0, Lcom/google/glass/camera/TakePictureActivity;->timelineHelper:Lcom/google/glass/timeline/TimelineHelper;
 
     invoke-static {p0, v0}, Lcom/google/glass/camera/TakePictureActivity;->createPictureItem(Landroid/content/Context;Lcom/google/glass/timeline/TimelineHelper;)Lcom/google/googlex/glass/common/proto/TimelineItem;
@@ -535,9 +555,9 @@
 
     iput-object v0, p0, Lcom/google/glass/camera/TakePictureActivity;->pictureItem:Lcom/google/googlex/glass/common/proto/TimelineItem;
 
-    .line 116
+    .line 115
     invoke-super {p0}, Lcom/google/glass/camera/BaseTakePictureActivity;->takePicture()V
 
-    .line 117
+    .line 116
     return-void
 .end method

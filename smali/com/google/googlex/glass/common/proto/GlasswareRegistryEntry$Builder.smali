@@ -308,7 +308,7 @@
 
     .prologue
     .line 1182
-    sget-object v0, Lcom/google/googlex/glass/common/proto/GlasswareRegistry;->internal_static_googlex_glass_common_proto_GlasswareRegistryEntry_descriptor:Lcom/google/protobuf/Descriptors$Descriptor;
+    sget-object v0, Lcom/google/googlex/glass/common/proto/GlasswareRegistryOuterClass;->internal_static_googlex_glass_common_proto_GlasswareRegistryEntry_descriptor:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
 .end method
@@ -1847,7 +1847,7 @@
 
     .prologue
     .line 1252
-    sget-object v0, Lcom/google/googlex/glass/common/proto/GlasswareRegistry;->internal_static_googlex_glass_common_proto_GlasswareRegistryEntry_descriptor:Lcom/google/protobuf/Descriptors$Descriptor;
+    sget-object v0, Lcom/google/googlex/glass/common/proto/GlasswareRegistryOuterClass;->internal_static_googlex_glass_common_proto_GlasswareRegistryEntry_descriptor:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
 .end method
@@ -3035,7 +3035,7 @@
 
     .prologue
     .line 1187
-    sget-object v0, Lcom/google/googlex/glass/common/proto/GlasswareRegistry;->internal_static_googlex_glass_common_proto_GlasswareRegistryEntry_fieldAccessorTable:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
+    sget-object v0, Lcom/google/googlex/glass/common/proto/GlasswareRegistryOuterClass;->internal_static_googlex_glass_common_proto_GlasswareRegistryEntry_fieldAccessorTable:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-class v1, Lcom/google/googlex/glass/common/proto/GlasswareRegistryEntry;
 

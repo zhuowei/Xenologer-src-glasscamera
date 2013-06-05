@@ -36,7 +36,7 @@
     .parameter
 
     .prologue
-    .line 228
+    .line 233
     iput-object p1, p0, Lcom/google/glass/camera/TakePictureActivity$4;->val$itemBuilder:Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;
 
     iput-object p2, p0, Lcom/google/glass/camera/TakePictureActivity$4;->val$picture:Lcom/google/glass/camera/Picture;
@@ -58,14 +58,14 @@
     .locals 8
 
     .prologue
-    .line 233
+    .line 238
     iget-object v4, p0, Lcom/google/glass/camera/TakePictureActivity$4;->val$itemBuilder:Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;
 
     invoke-virtual {v4}, Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;->getId()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 234
+    .line 239
     .local v1, pictureFileName:Ljava/lang/String;
     iget-object v4, p0, Lcom/google/glass/camera/TakePictureActivity$4;->val$picture:Lcom/google/glass/camera/Picture;
 
@@ -73,7 +73,7 @@
 
     move-result-object v2
 
-    .line 235
+    .line 240
     .local v2, thumbnail:Landroid/graphics/Bitmap;
     iget-object v4, p0, Lcom/google/glass/camera/TakePictureActivity$4;->val$cachedFilesManager:Lcom/google/glass/util/CachedFilesManager;
 
@@ -85,7 +85,7 @@
 
     invoke-virtual {v4, v5, v1, v6}, Lcom/google/glass/util/CachedFilesManager;->save(Lcom/google/glass/util/CachedFilesManager$Type;Ljava/lang/String;Lcom/google/glass/util/FileSaver$Saver;)Z
 
-    .line 249
+    .line 254
     invoke-static {}, Lcom/google/googlex/glass/common/proto/Attachment;->newBuilder()Lcom/google/googlex/glass/common/proto/Attachment$Builder;
 
     move-result-object v4
@@ -112,13 +112,13 @@
 
     move-result-object v0
 
-    .line 252
+    .line 257
     .local v0, attachment:Lcom/google/googlex/glass/common/proto/Attachment;
     iget-object v4, p0, Lcom/google/glass/camera/TakePictureActivity$4;->val$itemBuilder:Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;
 
     invoke-virtual {v4, v0}, Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;->addAttachment(Lcom/google/googlex/glass/common/proto/Attachment;)Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;
 
-    .line 255
+    .line 260
     iget-object v4, p0, Lcom/google/glass/camera/TakePictureActivity$4;->val$itemBuilder:Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;
 
     iget-object v5, p0, Lcom/google/glass/camera/TakePictureActivity$4;->val$picture:Lcom/google/glass/camera/Picture;
@@ -129,7 +129,7 @@
 
     invoke-virtual {v4, v5, v6}, Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;->setCreationTime(J)Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;
 
-    .line 256
+    .line 261
     iget-object v4, p0, Lcom/google/glass/camera/TakePictureActivity$4;->val$itemBuilder:Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;
 
     iget-object v5, p0, Lcom/google/glass/camera/TakePictureActivity$4;->val$picture:Lcom/google/glass/camera/Picture;
@@ -140,14 +140,14 @@
 
     invoke-virtual {v4, v5, v6}, Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;->setModifiedTime(J)Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;
 
-    .line 258
+    .line 263
     iget-object v4, p0, Lcom/google/glass/camera/TakePictureActivity$4;->val$itemBuilder:Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;
 
     invoke-virtual {v4}, Lcom/google/googlex/glass/common/proto/TimelineItem$Builder;->build()Lcom/google/googlex/glass/common/proto/TimelineItem;
 
     move-result-object v3
 
-    .line 261
+    .line 266
     .local v3, updatedItem:Lcom/google/googlex/glass/common/proto/TimelineItem;
     iget-object v4, p0, Lcom/google/glass/camera/TakePictureActivity$4;->val$timelineHelper:Lcom/google/glass/timeline/TimelineHelper;
 
@@ -159,6 +159,6 @@
 
     invoke-virtual {v4, v5, v3, v6, v7}, Lcom/google/glass/timeline/TimelineHelper;->insertTimelineItem(Landroid/content/Context;Lcom/google/googlex/glass/common/proto/TimelineItem;Lcom/google/glass/logging/UserEventAction$TimelineItemInserted;Lcom/google/googlex/glass/common/proto/UserAction;)Landroid/net/Uri;
 
-    .line 263
+    .line 268
     return-object v3
 .end method

@@ -19,11 +19,11 @@
 
 .field public static final google_glass_mainset_en_us_alpha_sfs_delivery21_search_20:I = 0x7f050001
 
-.field public static final google_glass_okglass_en_us_alpha_sfs_delivery08_am:I = 0x7f050002
+.field public static final google_glass_okglass_en_us_alpha_sfs_delivery09_am:I = 0x7f050002
 
-.field public static final google_glass_okglass_en_us_alpha_sfs_delivery08_search_1:I = 0x7f050003
+.field public static final google_glass_okglass_en_us_alpha_sfs_delivery09_search_1:I = 0x7f050003
 
-.field public static final google_glass_okglass_en_us_alpha_sfs_delivery08_search_10:I = 0x7f050004
+.field public static final google_glass_okglass_en_us_alpha_sfs_delivery09_search_10:I = 0x7f050004
 
 .field public static final google_glass_takeanote_en_us_alpha_sfs_delivery01_am:I = 0x7f050005
 
@@ -47,7 +47,7 @@
     .locals 0
 
     .prologue
-    .line 521
+    .line 518
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

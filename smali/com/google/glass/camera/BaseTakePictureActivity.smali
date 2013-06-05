@@ -161,20 +161,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$500(Lcom/google/glass/camera/BaseTakePictureActivity;Lcom/google/glass/logging/UserEventAction;Ljava/lang/String;)V
-    .locals 0
-    .parameter "x0"
-    .parameter "x1"
-    .parameter "x2"
-
-    .prologue
-    .line 35
-    invoke-virtual {p0, p1, p2}, Lcom/google/glass/camera/BaseTakePictureActivity;->logUserEvent(Lcom/google/glass/logging/UserEventAction;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method static synthetic access$600(Lcom/google/glass/camera/BaseTakePictureActivity;)Ljava/lang/String;
+.method static synthetic access$500(Lcom/google/glass/camera/BaseTakePictureActivity;)Ljava/lang/String;
     .locals 1
     .parameter "x0"
 

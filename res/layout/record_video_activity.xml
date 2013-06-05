@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.glass.horizontalscroll.HorizontalScrollFrameLayout android:background="@*android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+<com.google.glass.horizontalscroll.FrameLayoutCard android:background="@*android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:glass="http://schemas.android.com/apk/res/com.google.glass.camera">
     <TextureView android:id="@id/viewfinder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
@@ -12,4 +12,4 @@
     </FrameLayout>
     <com.google.glass.widget.TipsView android:gravity="center_horizontal" android:layout_gravity="bottom" android:id="@id/tip" android:paddingLeft="40.0px" android:paddingRight="40.0px" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/tip_view_height" android:layout_marginBottom="30.0px" glass:tip="@string/extend_video_tip" style="@style/TipsViewText" />
     <com.google.glass.widget.SliderView android:layout_gravity="bottom" android:id="@id/progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</com.google.glass.horizontalscroll.HorizontalScrollFrameLayout>
+</com.google.glass.horizontalscroll.FrameLayoutCard>
